@@ -1,0 +1,101 @@
+<div id="MRNDilaog" style="display: none; "> 
+	<table style="width: 100%;" id="mainForm">
+		<tbody>
+			<tr>
+				<td colspan="2">
+					<small><b>Enter patient’s institutional medical record number (MRN) and encounter dates.<b></small>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="MRN:">MRN:</label>
+				</td>
+				<td>
+					<input type="text" class="mainFormField" id="mrnText" name="mrnText">
+				    <div><small class="redInfo" id="mrnRequired">MRN is required</small></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+			    	<label>Encounter start:</label>
+				</td>
+				<td>
+					<input class="dtPicker mainFormField" type="text" name="EncounterStart" value="" id="EncounterStart">
+					<button ignore="Yes" class="jqbuttonsm ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="$('#EncounterStart').val(PullService.formatDateStr(new Date()));return false;" role="button">
+						<span class="ui-button-text">Today</span>
+					</button>
+					<span class="df">MM/DD/YYYY</span>
+				    <div><small class="redInfo" id="EncounterStartRequired">Encounter start date is required</small></div>
+				</td>
+			</tr>
+			<tr>
+				<td>
+			    	<label >Encounter end:</label>
+				</td>
+				<td>
+					<input class="dtPicker mainFormField" type="text" name="EncounterEnd" value="" id="EncounterEnd">
+					<button ignore="Yes" class="jqbuttonsm ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="$('#EncounterEnd').val(PullService.formatDateStr(new Date()));return false;" role="button">
+						<span class="ui-button-text">Today</span>
+					</button>
+					<span class="df">MM/DD/YYYY</span>
+				</td>
+			</tr>
+			<tr>
+				<td>
+					
+				</td>
+				<td>
+				    <button type="submit" class="jqbuttonsm ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PullService.findPatientData(); return false;" id="btnSubmit">Find patient</button>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+	<div>
+		<small class="redInfo" id="dirtyData">Warning: All existing form data will be cleared and overwritten when requesting data import.</small>
+	</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<table style="width: 100%;" id="patientForm">
+		<tbody>
+			<tr>
+				<td colspan="2" >
+					<div style="margin-left: 30px;">
+						<h3 class="patientName">Smith, M John (DoB: 12/17/1983)</h3>
+					</div>
+				</td>	
+			</tr>
+			<tr id="correctPatient">
+				<td>
+					Is this patient information correct?
+				</td>
+				<td>
+				    <button type="submit" class="jqbuttonsm ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PullService.isPatientCorrect(true); return false;" id="btnSubmit">Yes</button>
+				    <button type="submit" class="jqbuttonsm ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PullService.isPatientCorrect(false); return false;" id="btnSubmit">No</button>
+				</td>	
+			</tr>
+			<tr id="importDataRow">
+				<td>
+					<span id="requestSummary"></span>
+				</td>
+				<td>
+					<button style="white-space: nowrap;" class="jqbuttonsm ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" onclick="PullService.requestODM()">Request data</button>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+    <div style="width: 100%; text-align: center; padding-top: 30px;">
+		<span id="importErr"></span>
+    	<button type="button" onclick="PullService.closeImportDlg(); return false;" id="btnImportClose" class="jqbuttonsm ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" style="display: none;">Ok</button>
+    </div>
+</div>
+<style type="text/css">
+	.redInfo {
+		color: red;
+	}
+
+	.greenInfo {
+		color: green;
+	}
+</style>

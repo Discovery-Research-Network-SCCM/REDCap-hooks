@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ODM FileType="Snapshot" FileOID="eec08e43-39ef-42ee-a9e6-fbca3c1c4c08" CreationDateTime="2016-10-21T12:11:33.968-04:00"
+     AsOfDateTime="2016-10-21T12:11:33.968-04:00" ODMVersion="1.3.2" SourceSystem="phspulse4"
+     xmlns="http://www.cdisc.org/ns/odm/v1.3">
+    <ClinicalData StudyOID="phspulse4/project/sprint_sari_no_phi" MetaDataVersionOID="2016-02-09T14:41:57.000-05:00">
+        <SubjectData SubjectKey="">
+            <StudyEventData StudyEventOID="null">
+                <FormData FormOID="sprint_sari_rapid_crf">
+                    <ItemGroupData ItemGroupOID="sprint_sari_rapid_crf">
+                        <ItemData ItemOID="specialfield___1" Value="1"/>
+                        <ItemData ItemOID="specialfield___2" Value="1"/>
+                        <ItemData ItemOID="specialfield___3" Value="0"/>
+                        <ItemData ItemOID="site" Value="BWH ADDITIONAL 1"/>
+                        <ItemData ItemOID="country" Value="1"/>
+                        <ItemData ItemOID="sex" Value="2"/>
+                        <ItemData ItemOID="brthdat" Value="8"/>
+                        <ItemData ItemOID="pregnant" Value="998"/>
+                        <ItemData ItemOID="onsetdat" Value="4"/>
+                        <ItemData ItemOID="icuadmityn" Value="1"/>
+                        <ItemData ItemOID="icuadmitdat" Value="1"/>
+                        <ItemData ItemOID="mechvent" Value="1"/>
+                        <ItemData ItemOID="fio2yn" Value="2"/>
+                        <ItemData ItemOID="fio2lmin" Value="10"/>
+                        <ItemData ItemOID="sao2yn" Value="1"/>
+                        <ItemData ItemOID="sao2" Value="88"/>
+                        <ItemData ItemOID="pao2yn" Value="0"/>
+                        <ItemData ItemOID="plateletyn" Value="0"/>
+                        <ItemData ItemOID="mnarbpyn" Value="0"/>
+                        <ItemData ItemOID="gcsyn" Value="0"/>
+                        <ItemData ItemOID="urineyn" Value="0"/>
+                        <ItemData ItemOID="bilirubinyn" Value="1"/>
+                        <ItemData ItemOID="bilirubin" Value="23.94"/>
+                        <ItemData ItemOID="creatinineyn" Value="1"/>
+                        <ItemData ItemOID="creatinine" Value="2.06"/>
+                        <ItemData ItemOID="creatinineunt" Value="2"/>
+                        <ItemData ItemOID="vasopressup" Value="1"/>
+                        <ItemData ItemOID="icudischday" Value="5"/>
+                        <ItemData ItemOID="influenza" Value="2"/>
+                        <ItemData ItemOID="inftyp" Value="6"/>
+                        <ItemData ItemOID="coronavirus" Value="0"/>
+                        <ItemData ItemOID="infectdiagoth" Value="1"/>
+                        <ItemData ItemOID="clnpneum" Value="0"/>
+                        <ItemData ItemOID="oxygensupp" Value="1"/>
+                        <ItemData ItemOID="invasionornon" Value="1"/>
+                        <ItemData ItemOID="noninvasionornon" Value="0"/>
+                        <ItemData ItemOID="ecmo" Value="1"/>
+                        <ItemData ItemOID="dialysis" Value="0"/>
+                        <ItemData ItemOID="icuoccur" Value="0"/>
+                        <ItemData ItemOID="outcome" Value="4"/>
+                        <ItemData ItemOID="outcomedat" Value="4"/>
+                    </ItemGroupData>
+                </FormData>
+            </StudyEventData>
+        </SubjectData>
+    </ClinicalData>
+</ODM>

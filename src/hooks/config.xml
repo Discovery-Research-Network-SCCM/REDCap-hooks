@@ -1,0 +1,2 @@
+<?xml version="1.0"?>
+<configuration><hook disabled="false" local="true" hookClass="DisableSubmitFormByEnter"><projects><project id="1"/></projects></hook><hook disabled="false" local="false" hookClass="TimeFormStatistic"><projects/></hook></configuration>
